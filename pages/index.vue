@@ -94,8 +94,8 @@ const components = ref([
 	},
 	{
 		name: "Quote",
-		progress: 90,
-		comment: "Doesn't support large size for now",
+		progress: 100,
+		comment: "API doesn't send any info on large option for quotes",
 	},
 	{
 		name: "Divider",
