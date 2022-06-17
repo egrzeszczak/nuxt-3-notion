@@ -38,7 +38,7 @@ This application is also using [DaisyUI](daisyui.com), a TailwindCSS component l
 1. Clone this repository
 
 ```sh
-git clone https://github.cm/egrzeszczak/nuxt-3-notion
+git clone https://github.com/egrzeszczak/nuxt-3-notion
 ```
 
 2. Create an `.env` file in the root folder
