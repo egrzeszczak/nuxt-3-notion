@@ -4,9 +4,22 @@
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
+## Table of contents
+
+* [Demo](#demo)
+* [Documentation](#documentation)
+* [Stack](#stack)
+* [Setup](#setup)
+* [Development Server](#development-server)
+* [Production](#production)
+
 ## Demo
 
 You can check the demo [here](https://lustrous-sawine-579ca9.netlify.app/)
+
+## Documentation
+
+The public documentation page is available [here](https://wide-hat-401.notion.site/Nuxt-3-Notion-b48f95480a714640a2dd0668aed3b7da)
 
 ## Stack
 
