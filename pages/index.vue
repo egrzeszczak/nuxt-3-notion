@@ -69,8 +69,8 @@ const components = ref([
 	},
 	{
 		name: "To-do list",
-		progress: 80,
-		comment: "Can't show children to-dos right now",
+		progress: 100,
+		comment: "",
 	},
 	{
 		name: "Subpage",

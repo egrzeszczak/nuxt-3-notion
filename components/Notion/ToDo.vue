@@ -10,10 +10,13 @@ const props = defineProps(["block"]);
 				v-model="block[block.type].checked"
 				class="notion-to-do-checkbox"
 			/>
-			<span class="notion-to-do-label-text" :class="{'notion-to-do-label-text-checked': block[block.type].checked}">
+			<div class="notion-to-do-label-text" :class="{'notion-to-do-label-text-checked': block[block.type].checked}">
 				<NotionRichText :richText="block[block.type].rich_text" />
-			</span>
+			</div>
 		</label>
+		<div class="pl-8">
+			<NotionPageContent v-if="block.has_children" :page_id="block.id"/>
+		</div>
 	</div>
 </template>
 

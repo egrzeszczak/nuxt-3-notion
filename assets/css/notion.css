@@ -43,10 +43,10 @@
 
 /* To-dos */
 .notion-to-do {
-	@apply form-control border-b border-base-200;
+	@apply form-control divide-y;
 }
 .notion-to-do-label {
-	@apply label cursor-pointer;
+	@apply label cursor-pointer justify-start gap-4;
 }
 .notion-to-do-label-text {
 	@apply label-text;
