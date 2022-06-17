@@ -2,24 +2,23 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/61b93561-607e-4ea9-abdd-035e16185394/deploy-status)](https://app.netlify.com/sites/lustrous-sawine-579ca9/deploys)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
 ## Table of contents
 
-* [Demo](#demo)
-* [Documentation](#documentation)
-* [Stack](#stack)
-* [Setup](#setup)
-* [Development Server](#development-server)
-* [Production](#production)
+-   [Front-end Example (Nuxt)](#front-end-example)
+-   [Back-end Example (Notion)](#back-end-example)
+-   [Documentation](#documentation)
+-   [Stack](#stack)
+-   [Setup](#setup)
+-   [Development Server](#development-server)
+-   [Production](#production)
 
-## Demo
+## Front-end example
 
-You can check the demo [here](https://lustrous-sawine-579ca9.netlify.app/)
+This app is rendering a notion page, which you can see [here](https://lustrous-sawine-579ca9.netlify.app/).
 
-## Documentation
+## Back-end example
 
-The public documentation page is available [here](https://wide-hat-401.notion.site/Nuxt-3-Notion-b48f95480a714640a2dd0668aed3b7da)
+How this page looks on Notion you can find [here](https://wide-hat-401.notion.site/Nuxt-3-Notion-b48f95480a714640a2dd0668aed3b7da).
 
 ## Stack
 
@@ -29,15 +28,38 @@ The public documentation page is available [here](https://wide-hat-401.notion.si
     <img src="https://cdn.worldvectorlogo.com/logos/notion-logo-1.svg" width=32 height=32>
 </p>
 
+## Documentation
+
+Look at the [Nuxt 3 documentation](https://v3.nuxtjs.org), [Tailwind documentation](https://tailwindcss.com/docs/installation) and [Notion API documentation](https://developers.notion.com/reference/intro) to learn more.
+This application is also using [DaisyUI](daisyui.com), a TailwindCSS component library.
+
 ## Setup
 
-Create an `.env` file
+1. Clone this repository
+
+```sh
+git clone https://github.cm/egrzeszczak/nuxt-3-notion
+```
+
+2. Create an `.env` file in the root folder
+
 ```env
 NOTION_ACCESS_TOKEN="your-integration-access-token"
 NUXT_PUBLIC_NOTION_ROOT_PAGE="page-you-want-to-render"
 ```
 
-Make sure to install the dependencies:
+3. Delete `layouts/` folder
+
+4. Replace the existing `/pages/index.vue` file with:
+
+```html
+<script setup>
+	const config = useRuntimeConfig();
+	navigateTo(`/page/${config.notionRootPage}`);
+</script>
+```
+
+5. Make sure to install the dependencies:
 
 ```bash
 # yarn
@@ -55,7 +77,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+npx nuxi dev
 ```
 
 ## Production
@@ -63,13 +85,17 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+npx nuxi build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+npx nuxi preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+## Roadmap
+
+Check what is planned for this project [here](https://lustrous-sawine-579ca9.netlify.app/)
