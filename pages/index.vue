@@ -155,7 +155,7 @@ const components = ref([
 	},
 	{ name: "Block equation", progress: 100, comment: "" },
 	{ name: "Breadcrumb", progress: 0, comment: "Not yet implemented" },
-	{ name: "Synced block", progress: 80, comment: "Sometimes synced block doesn't work when you duplicate a page with a synced block in it" },
+	{ name: "Synced block", progress: 100, comment: "" },
 	{ name: "Toggle headings", progress: 100, comment: "" },
 ]);
 </script>

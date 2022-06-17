@@ -4,6 +4,7 @@ const props = defineProps(["block"]);
 
 <template>
 	<div class="notion-synced-block">
-		<NotionPageContent :page_id="block.id" />
+		<NotionPageContent v-if="block.synced_block.synced_from" :page_id="block.synced_block.synced_from.block_id" />
+		<NotionPageContent v-else :page_id="block.id" />
 	</div>
 </template>
