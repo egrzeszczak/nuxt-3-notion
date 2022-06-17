@@ -114,8 +114,13 @@ const components = ref([
 	},
 	{
 		name: "Columns",
+		progress: 100,
+		comment: "",
+	},
+	{
+		name: "Code",
 		progress: 80,
-		comment: "Some components (like code blocks) are pushing columns out",
+		comment: "No syntax highlighting",
 	},
 	{
 		name: "User mention",

@@ -84,10 +84,9 @@
 
 /* Collumns */
 .notion-column-list {
-	@apply gap-6 block lg:flex lg:flex-row;
+	@apply gap-6 grid;
 }
 .notion-column {
-    @apply flex-1
 }
 
 /* List items */
