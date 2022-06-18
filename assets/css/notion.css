@@ -207,7 +207,7 @@
 
 /* Notion block */
 .notion-block {
-	/* @apply border border-blue-500; */
+	@apply mb-2;
 }
 
 /* Notion synced block */
@@ -216,5 +216,5 @@
 
 /* Notion unsupported */
 .notion-unsupported {
-	@apply mockup-code my-2;
+	@apply mockup-code;
 }
