@@ -79,8 +79,8 @@ const components = ref([
 	},
 	{
 		name: "Table",
-		progress: 70,
-		comment: "Tables are pushing out content while in columns",
+		progress: 90,
+		comment: "No visual header column, header row",
 	},
 	{
 		name: "Bullet list",
@@ -125,7 +125,7 @@ const components = ref([
 	{
 		name: "User mention",
 		progress: 80,
-		comment: "User get only highlighted",
+		comment: "User gets only highlighted",
 	},
 	{
 		name: "Page mentioning",
