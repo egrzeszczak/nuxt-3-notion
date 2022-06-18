@@ -72,7 +72,7 @@ watch(page, (newPage) => {});
 					}}
 				</h1>
 			</div>
-			<NotionPageContent :page_id="route.params.id" />
+			<NotionContent :page_id="route.params.id" />
 		</article>
 		<article v-else class="prose max-w-none py-10">
 			<Skeleton class="h-16 my-6" />

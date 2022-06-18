@@ -28,7 +28,7 @@ const { data: content } = await useFetch(
 			v-for="column in content.results"
 			:key="column.id"
 		>
-			<NotionPageContent :page_id="column.id" />
+			<NotionContent :page_id="column.id" />
 		</section>
 	</div>
 </template>

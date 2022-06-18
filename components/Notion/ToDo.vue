@@ -15,7 +15,7 @@ const props = defineProps(["block"]);
 			</div>
 		</label>
 		<div class="pl-8">
-			<NotionPageContent v-if="block.has_children" :page_id="block.id"/>
+			<NotionContent v-if="block.has_children" :page_id="block.id"/>
 		</div>
 	</div>
 </template>

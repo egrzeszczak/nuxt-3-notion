@@ -25,15 +25,12 @@
             <NotionRichText :richText="block[block.type].rich_text" />
         </div>
         <div class="collapse-content">
-            <NotionRender :content="content.results" />
+            <NotionContent :page_id="block.id" />
         </div>
     </div>
 </template>
 
 <script setup>
 const props = defineProps(['block'])
-const { data: content } = await useFetch(
-    `/api/notion/retrieve-block-children/${props.block.id}`
-)
 </script>
 
