@@ -66,10 +66,9 @@
 }
 /* Tables */
 .notion-table {
-    
+    @apply table table-compact;
 }
 .notion-table-body {
-    
 }
 .notion-table-tr {
     
@@ -141,7 +140,7 @@
 
 /* Table of contents */
 .notion-table-of-contents {
-	@apply bg-base-100 my-4
+	@apply bg-base-100 my-4;
 }
 .notion-table-of-contents-list {
 	@apply border p-0 m-0 rounded
