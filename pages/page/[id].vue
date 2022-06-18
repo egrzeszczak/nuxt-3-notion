@@ -10,7 +10,7 @@ watch(page, (newPage) => {});
 	<main class="max-w-6xl mx-auto p-6 lg:p-0">
 		<article v-if="!pending" class="prose max-w-none py-12">
 			<div class="flex items-center gap-4">
-				<div><NotionIcon :icon="page.icon" :large="true"/></div>
+				<div v-if="page.icon"><NotionIcon :icon="page.icon" :large="true"/></div>
 				<h1 class="text-5xl p-0 m-0">
 					{{
 						page.properties.title[page.properties.title.type][0][

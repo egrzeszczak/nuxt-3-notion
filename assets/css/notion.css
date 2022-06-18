@@ -162,9 +162,9 @@
 }
 
 /* Notion block */
-/* .notion-block {
-    @apply border p-2 m-4;
-} */
+.notion-block {
+    /* @apply border border-blue-500; */
+}
 
 /* Notion synced block */
 .notion-synced-block {
