@@ -149,6 +149,11 @@ const components = ref([
 		progress: 0,
 		comment: "Trying to find nice iframe npm package",
 	},
+	{
+		name: "Embed",
+		progress: 0,
+		comment: "Trying to find nice iframe npm package",
+	},
 	{ name: "Video", progress: 0, comment: "Not yet implemented" },
 	{ name: "Audio", progress: 0, comment: "Not yet implemented" },
 	{ name: "File", progress: 0, comment: "Not yet implemented" },

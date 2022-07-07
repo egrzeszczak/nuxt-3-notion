@@ -5,7 +5,7 @@
         </label>
         <div
             v-if="block.image.caption"
-            class="text-xs font-normal mt-1 text-center"
+            class="notion-image-caption"
         >
             <NotionRichText :richText="block.image.caption" />
         </div>

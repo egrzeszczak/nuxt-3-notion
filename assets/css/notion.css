@@ -145,6 +145,17 @@
 	@apply px-6 py-4;
 }
 
+/* Code */
+.notion-code pre {
+	@apply mb-1 pb-0;
+}
+.notion-caption {
+	@apply text-xs font-normal;
+}
+.notion-image-caption {
+	@apply text-xs font-normal mt-1 text-center;
+}
+
 /* Dividers */
 .notion-divider {
 }
