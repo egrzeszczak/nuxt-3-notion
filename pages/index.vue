@@ -11,6 +11,18 @@
 					Go to the page &rArr;
 				</NuxtLink>
 			</p>
+			<h2>To do</h2>
+			<div>
+				<label class="notion-to-do-label" v-for="todo in todos" :key="todo.todo">
+					<input type="checkbox" class="notion-to-do-checkbox" v-model="todo.done"/>
+					<div
+						class="notion-to-do-label-text"
+						:class="{
+							'notion-to-do-label-text-checked': todo.done,
+						}"
+					>{{todo.todo}}</div>
+				</label>
+			</div>
 			<h2>Component list</h2>
 			<table>
 				<thead>
@@ -19,7 +31,16 @@
 					<th>Comment</th>
 				</thead>
 				<tbody>
-					<tr v-for="component in components.sort((a,b) => (a.progress > b.progress) ? -1 : ((b.progress > a.progress) ? 1 : 0))" :key="component.name">
+					<tr
+						v-for="component in components.sort((a, b) =>
+							a.progress > b.progress
+								? -1
+								: b.progress > a.progress
+								? 1
+								: 0
+						)"
+						:key="component.name"
+					>
 						<td>
 							<span
 								class="badge"
@@ -32,8 +53,8 @@
 								}"
 								max="100"
 							>
-                            {{component.progress}}%
-                            </span>
+								{{ component.progress }}%
+							</span>
 						</td>
 						<td class="font-bold">{{ component.name }}</td>
 						<td>{{ component.comment }}</td>
@@ -46,6 +67,64 @@
 
 <script setup>
 const config = useRuntimeConfig();
+const todos = ref([
+	{
+		todo: "Create link to page component",
+		done: true,
+	},
+	{
+		todo: "Make header columnd and header row visible",
+		done: false,
+	},
+	{
+		todo: "Make bullet list display children",
+		done: false,
+	},
+	{
+		todo: "Code highlighting",
+		done: false,
+	},
+	{
+		todo: "Make numbered list items numbered",
+		done: false,
+	},
+	{
+		todo: "Make inline equations",
+		done: false,
+	},
+	{
+		todo: "Make inline equations",
+		done: false,
+	},
+	{
+		todo: "Create bookmark component",
+		done: false,
+	},
+	{
+		todo: "Create embed component",
+		done: false,
+	},
+	{
+		todo: "Create video component",
+		done: false,
+	},
+	{
+		todo: "Create audio component",
+		done: false,
+	},
+	{
+		todo: "Create file component",
+		done: false,
+	},
+	{
+		todo: "Create database component",
+		done: false,
+	},
+	{
+		todo: "Create breadcrumbs component",
+		done: false,
+	},
+]);
 const components = ref([
 	{
 		name: "Heading 1",
@@ -90,7 +169,8 @@ const components = ref([
 	{
 		name: "Numbered list",
 		progress: 60,
-		comment: "Numbered lists don't get numbered, doesn't display children items",
+		comment:
+			"Numbered lists don't get numbered, doesn't display children items",
 	},
 	{
 		name: "Quote",
@@ -157,14 +237,18 @@ const components = ref([
 	{ name: "Video", progress: 0, comment: "Not yet implemented" },
 	{ name: "Audio", progress: 0, comment: "Not yet implemented" },
 	{ name: "File", progress: 0, comment: "Not yet implemented" },
-	{ name: "Databases", progress: 0, comment: "Not yet implemented; hard to implement. Will think about it" },
+	{
+		name: "Databases",
+		progress: 0,
+		comment: "Not yet implemented; hard to implement. Will think about it",
+	},
 	{
 		name: "Table of contents",
 		progress: 70,
 		comment: "Doesn't display headings when in a collumn",
 	},
 	{ name: "Block equation", progress: 100, comment: "" },
-	{ name: "Breadcrumb", progress: 0, comment: "Not yet implemented" },
+	{ name: "Breadcrumbs", progress: 0, comment: "Not yet implemented" },
 	{ name: "Synced block", progress: 100, comment: "" },
 	{ name: "Toggle headings", progress: 100, comment: "" },
 ]);
