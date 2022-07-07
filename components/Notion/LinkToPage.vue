@@ -17,6 +17,7 @@
 		<div class="notion-link-to-page-text">
 			<NotionRichText :richText="page.properties.title.title" />
 		</div>
+		<!-- TODO: SKELETON / PLACEHOLDER  -->
 	</NuxtLink>
 </template>
 
