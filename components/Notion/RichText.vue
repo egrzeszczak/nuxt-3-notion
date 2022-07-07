@@ -47,7 +47,7 @@
 				<span v-if="element.type == 'mention'">
 					<NotionMention :mention="element" />
 				</span>
-				{{ element[element.type].content }} &neArr;
+				{{ element[element.type].content }}
 			</a>
 			<span v-else>
 				<span v-if="element.type == 'mention'">

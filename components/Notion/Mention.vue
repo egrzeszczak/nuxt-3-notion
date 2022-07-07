@@ -11,7 +11,7 @@
 		<!-- Strona -->
 		<span v-if="mention[mention.type].type == 'page'">
 			<NuxtLink class="notion-mention-page" :to="`/page/${mention.mention.page.id}`"
-				>{{ mention.plain_text }} &neArr;</NuxtLink
+				>{{ mention.plain_text }}</NuxtLink
 			>
 		</span></span
 	>

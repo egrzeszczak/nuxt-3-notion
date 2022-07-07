@@ -160,6 +160,17 @@
 .notion-divider {
 }
 
+/* Dividers */
+.notion-link-to-page {
+	@apply link flex items-center gap-4 p-2 hover:text-accent bg-base-100;
+}
+.notion-link-to-page-icon {
+	@apply w-10;
+}
+.notion-link-to-page-text {
+	@apply text-xl flex;
+}
+
 /* Callouts */
 .notion-callout {
 	@apply flex p-4 rounded my-2 border;

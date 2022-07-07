@@ -71,6 +71,8 @@ watch(content, (newContent) => {});
 					v-else-if="block.type == 'column_list'"
 					:block="block"
 				/>
+				<NotionLinkToPage v-else-if="block.type == 'link_to_page'" :block="block" />
+
 				<NotionTableOfContents
 					v-else-if="block.type == 'table_of_contents'"
 					:content="

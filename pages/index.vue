@@ -104,8 +104,8 @@ const components = ref([
 	},
 	{
 		name: "Link to page",
-		progress: 0,
-		comment: "Not yet implemented",
+		progress: 100,
+		comment: "",
 	},
 	{
 		name: "Callout",
