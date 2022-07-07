@@ -6,11 +6,7 @@
 		</span>
 
 		<!-- Data -->
-		<span class="notion-mention-date" v-if="mention[mention.type].type == 'date'">
-			<span v-if="mention[mention.type].date.start">{{
-				mention[mention.type].date.start
-			}}</span>
-		</span>
+		<NotionDate v-if="mention[mention.type].type == 'date'" :data="mention[mention.type]" />
 
 		<!-- Strona -->
 		<span v-if="mention[mention.type].type == 'page'">
@@ -24,7 +20,3 @@
 <script setup>
 const props = defineProps(["mention"]);
 </script>
-
-<style>
-
-</style>

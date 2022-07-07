@@ -134,8 +134,8 @@ const components = ref([
 	},
 	{
 		name: "Date mentioning / reminder",
-		progress: 50,
-		comment: "Date isn't getting formated yet",
+		progress: 100,
+		comment: "Right now no reminder info is passed via API",
 	},
 	{ name: "Emojis", progress: 100, comment: "" },
 	{

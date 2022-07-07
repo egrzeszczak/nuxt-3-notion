@@ -3,6 +3,7 @@ const props = defineProps(["content"]);
 </script>
 
 <template>
+<!-- FIXME: Figure out how to fix this component -->
 	<nav class="notion-table-of-contents">
 		<ul class="notion-table-of-contents-list">
 			<li

@@ -166,7 +166,7 @@
 .notion-mention-user {
 	@apply text-primary;
 }
-.notion-mention-date {
+.notion-date {
 	@apply text-secondary;
 }
 .notion-mention-page {
